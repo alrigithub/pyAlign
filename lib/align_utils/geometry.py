@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """Bounding box and geometry utilities."""
 
+from collections import namedtuple
+
 from Autodesk.Revit.DB import XYZ
+
+
+#: An element's bounding box projected onto one view axis.
+Record = namedtuple("Record", "element min max center size")
 
 
 def get_element_bbox(element, view=None):
@@ -62,12 +68,11 @@ def project_bbox(bbox, view, axis):
 
 
 def project_pairs(pairs, view, axis):
-    """Return (element, bbox, min, max, center, size) tuples."""
-    projected = []
-    for element, bbox in pairs:
-        min_value, max_value, center, size = project_bbox(bbox, view, axis)
-        projected.append((element, bbox, min_value, max_value, center, size))
-    return projected
+    """Project (element, bbox) pairs onto a view axis as Records."""
+    return [
+        Record(element, *project_bbox(bbox, view, axis))
+        for element, bbox in pairs
+    ]
 
 
 def view_delta_to_model(dx_view, dy_view, view):

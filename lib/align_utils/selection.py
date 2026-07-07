@@ -4,7 +4,7 @@
 from Autodesk.Revit.DB import View3D
 
 
-def _alert(message, exitscript=False):
+def alert(message, exitscript=False):
     from pyrevit import forms
     forms.alert(message, exitscript=exitscript)
 
@@ -12,7 +12,7 @@ def _alert(message, exitscript=False):
 def check_view(view):
     """Exit script if the active view is a 3D view."""
     if isinstance(view, View3D):
-        _alert("Alignment is not supported in 3D views.", exitscript=True)
+        alert("Alignment is not supported in 3D views.", exitscript=True)
 
 
 def get_pinned_reference(pairs):
@@ -47,5 +47,5 @@ def get_pinned_reference(pairs):
         button_name="Use as Reference",
     )
     if not chosen:
-        _alert("No reference selected.", exitscript=True)
+        alert("No reference selected.", exitscript=True)
     return options[chosen]
