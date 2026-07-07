@@ -1,0 +1,7 @@
+title: Around H
+tooltip: Equalize horizontal space around each selected element, with half-gaps at the outer edges.
+author: Alex Ritivoi
+help_url: https://github.com/alrigithub/pyAlign
+min_revit_ver: 2025
+max_revit_ver: 2026
+context: selection

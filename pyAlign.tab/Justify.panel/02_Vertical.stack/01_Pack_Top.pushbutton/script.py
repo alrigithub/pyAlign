@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
-__title__ = "Pack Top"
-__doc__ = """Pack selected elements together vertically from the top edge."""
-__author__ = "Alex Ritivoi"
-__context__ = "selection"
-__min_revit_ver__ = 2025
-__max_revit_ver__ = 2026
+"""Pack selected elements together vertically from the top edge."""
 
 from align_utils.commands import run_justify
 
 doc = __revit__.ActiveUIDocument.Document
 
 if __name__ == '__main__':
-    run_justify(doc, __title__, "y", "start")
+    run_justify(doc, "Pack Top", "y", "start")
