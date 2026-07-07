@@ -2,7 +2,8 @@
 
 Graphic-design style alignment tools for the Revit ribbon, built on [pyRevit](https://github.com/pyrevitlabs/pyRevit). Align, distribute, justify, and space Revit elements the way you would in Illustrator or Figma.
 
-![pyAlign demo](assets/demo.gif)
+<img src="assets/demo.gif" alt="pyAlign demo" width="600">
+
 
 Works with model elements and annotations (text notes, tags, dimensions, detail items) in any 2D view. All tools operate on the current selection in the active view's coordinate system, so they behave the same in plans, sections, and elevations. Each command is a single undo step.
 
