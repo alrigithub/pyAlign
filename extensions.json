@@ -1,0 +1,17 @@
+{
+    "extensions": [
+        {
+            "builtin": "False",
+            "type": "extension",
+            "rocket_mode_compatible": "True",
+            "name": "pyAlign",
+            "description": "Align, distribute, justify, and space tools for Revit elements",
+            "author": "Alex Ritivoi",
+            "author_profile": "https://github.com/alrigithub",
+            "url": "https://github.com/alrigithub/pyAlign.git",
+            "website": "https://github.com/alrigithub/pyAlign",
+            "image": "",
+            "dependencies": []
+        }
+    ]
+}
