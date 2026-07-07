@@ -1,0 +1,8 @@
+{
+    "name": "pyAlign",
+    "description": "Align, distribute, justify, and space tools for Revit elements",
+    "author": "Alex Ritivoi",
+    "version": "1.0.0",
+    "url": "https://github.com/alrigithub/pyAlign",
+    "website": "https://github.com/alrigithub/pyAlign"
+}
