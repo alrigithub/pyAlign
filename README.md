@@ -57,7 +57,7 @@ Pinned elements are never moved. Align may use one as the reference.
 With the pyRevit CLI:
 
 ```
-pyrevit extend ui pyAlign https://github.com/alrigithub/pyAlign.git
+pyrevit extend ui pyAlign https://github.com/alrigithub/pyAlign.git --branch=main
 ```
 
 Or manually: clone this repo as a folder named `pyAlign.extension`, then add its parent folder in pyRevit > Settings > Custom Extension Directories and reload.
